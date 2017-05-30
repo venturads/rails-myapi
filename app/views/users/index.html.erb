@@ -1,12 +1,6 @@
 <br><br><br>
 <div class="container">
 <br>
-<%= form_tag(users_path, :method => "get", id: "search-form") do %>
-  <%= text_field_tag :search, params[:search], placeholder: "Search Users", class:'form-control' %>
-  <%= submit_tag "Search", :name => nil, class:'btn btn-default' %>
-<% end %>
-<br>
-<br>
 <div class='well'>
 <% @place.each do |t| %> <br>
   <strong>Name: <%= t['name'] %></strong>, Versions: <%= t['version'] %></strong><br>
@@ -15,5 +9,11 @@
   <hr>
 <% end %>  
 </div>
+<br>
+<br>
+<%= form_tag(users_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Users", class:'form-control' %>
+  <%= submit_tag "Search", :name => nil, class:'btn btn-default' %>
+<% end %>
 <br>
 </div>
