@@ -5,7 +5,8 @@
 <% @place.each do |t| %> <br>
   <strong>Name: <%= t['name'] %></strong>, Versions: <%= t['version'] %></strong><br>
   <strong>Authours: <%= t['authors'] %></strong><br>
-  <strong>Project Page: <%= link_to t['project_uri'], t['project_uri'], target: '_blank' %></strong>
+  <strong>Project Page: <%= link_to t['project_uri'], t['project_uri'], target: '_blank' %></strong><br><br>
+  <p><strong>Info: <%= t['info'] %></strong></p>
   <hr>
 <% end %>  
 </div>
