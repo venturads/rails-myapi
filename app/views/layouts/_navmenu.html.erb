@@ -20,7 +20,7 @@
                             <div class="form-group-group">
                                 <div class="input-group" style="width: 220px;">
                                     <%= form_tag(users_path, :method => "get", id: "search-form") do %>
-                                      <%= text_field_tag :search, params[:search], placeholder: "Search Users", class:'form-control' %>
+                                      <%= text_field_tag :search, params[:search], placeholder: "Search RubyGems", class:'form-control' %>
                                     <% end %>
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" type="button"><b class = "glyphicon glyphicon-search"></b></button>
